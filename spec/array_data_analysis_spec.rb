@@ -9,25 +9,25 @@ describe ArrayDataAnalysis do
     end
   end
 
-  xdescribe '#highest_temperature' do
+  describe '#highest_temperature' do
     it "returns the highest number in the second entry of all the nested arrays" do
       expect(analyzer.highest_temperature).to be == 97
     end
   end
 
-  xdescribe '#day_of_lowest_temperature' do
+  describe '#day_of_lowest_temperature' do
     it "return the day corresponding to the lowest temperature (first column in nested array)" do
       expect(analyzer.day_of_lowest_temperature).to be == 9
     end
   end
 
-  xdescribe '#day_of_highest_temperature' do
+  describe '#day_of_highest_temperature' do
     it "returns the day corresponding to the highest temperature (first column in the nested array)" do
       expect(analyzer.day_of_highest_temperature).to be == 26
     end
   end
 
-  xdescribe '#average_temperatures' do
+  describe '#average_temperatures' do
     it "returns a array of average temperatures, on for each day" do
       expect(analyzer.average_temperatures.length).to be == 30
       expect(analyzer.average_temperatures[0]).to be == 73.5
